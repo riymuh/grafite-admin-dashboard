@@ -4,12 +4,146 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap w/ Webpack</title>
+    <link rel="stylesheet" href="asset/style.css">
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>ini dashboard</h1>
-      <button class="btn btn-primary">Primary button</button>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border fixed-top bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <!-- trigger offcanvas -->
+          <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="bi bi-grid-fill"></i>
+          </button>
+          <span class="fw-bold">Grafisity</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex ms-auto" role="search">
+            <div class="input-group my-3 my-lg-0">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-secondary" type="button" id="button-addon2">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+          <ul class="navbar-nav ">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-fill"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start offcanvas -->
+    <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-body p-0">
+        <nav class="mt-4">
+          <ul class="navbar-nav">
+            <li>
+              <div class="text-uppercase text-muted small fw-semibold px-3">core</div>
+            </li>
+            <li>
+              <a href="" class="nav-link px-3 active">
+                <span class="me-2">
+                  <i class="bi bi-grid-3x3-gap-fill"></i>
+                </span>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="my-1">
+              <hr class="" />
+            </li>
+            <li>
+              <div class="text-uppercase text-muted small fw-semibold px-3">interfaces</div>
+            </li>
+            <li>
+              <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <span class="me-2">
+                  <i class="bi bi-grid-3x3-gap-fill"></i>
+                </span>
+                <span>Tables</span>
+                <span class="right-icon ms-auto">
+                  <i class="bi bi-chevron-down"></i>
+                </span>
+              </a>
+              <div class="collapse" id="collapseExample">
+                <div class="">
+                  <ul class="navbar-nav ps-3">
+                    <li>
+                      <a href="" class="nav-link px-3">
+                        <span class="me-2">
+                          <i class="bi bi-grid-3x3-gap-fill"></i>
+                        </span>
+                        <span>Tables</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
+    <!-- end navbar -->
+
+    <main class="ps-3 pt-3 mt-5">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+    </main>
+
     <script src="../main.js"></script>
+    <script src="asset/script.js"></script>
   </body>
 </html>
