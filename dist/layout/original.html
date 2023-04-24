@@ -26,11 +26,10 @@
               </a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link position-relative" href="#">
-                <i class="bi bi-archive-fill"></i>
-                <span class="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 8px;">
-                  99+
-                  <span class="visually-hidden">unread messages</span>
+              <a class="nav-link position-relative" data-bs-toggle="offcanvas" href="#offcanvass-messagge-navbar" role="button" aria-controls="offcanvass-messagge-navbar">
+                <i class="bi bi-chat-text-fill"></i>
+                <span class="position-absolute top-10 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                  <span class="visually-hidden">New alerts</span>
                 </span>
               </a>
             </li>
@@ -40,13 +39,20 @@
               </a>
             </li>
             
-            <li class="nav-item px-3">
-              <a class="nav-link position-relative" href="#">
-                <i class="bi bi-chat-text-fill"></i>
-                <span class="position-absolute top-10 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
-                  <span class="visually-hidden">New alerts</span>
+            <li class="nav-item px-3 dropdown">
+              <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-archive-fill"></i>
+                <span class="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 8px;">
+                  99+
+                  <span class="visually-hidden">unread messages</span>
                 </span>
               </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Actionasasa</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
             </li>
 
             <li class="nav-item ps-3 dropdown">
@@ -114,7 +120,7 @@
         </nav>
       </div>
     </div>
-    <!-- end navbar -->
+    <!-- end offcanvas -->
 
     <main class="pt-3 mt-5">
       <div class="container-fluid">
@@ -160,6 +166,30 @@
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
       </div>
     </main>
+
+    <!-- start offcanvas messages navbar -->
+    <div class="offcanvas offcanvas-end shadow-lg" tabindex="-1" id="offcanvass-messagge-navbar" aria-labelledby="offcanvasExampleLabel" data-bs-backdrop="false">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Conversations</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end offcanvas messages navbar -->
 
     <script src="../main.js"></script>
     <script src="asset/script.js"></script>
