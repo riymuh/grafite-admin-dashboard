@@ -1,6 +1,17 @@
+@import "https://fonts.bunny.net/css?family=Nunito";
+
 :root {
   --offcanvas-width: 250px;
   --topNavbarHeight: 57px;
+  --bs-font-family: "Nunito", sans-serif;
+}
+
+body {
+  font-family: var(--bs-font-family) !important;
+}
+
+.fs-7 {
+  font-size: 14px !important;
 }
 
 .sidebar-nav {
@@ -19,6 +30,29 @@
 
 .sidebar-link[aria-expanded="true"] .right-icon {
   transform: rotate(180deg);
+}
+
+.sidebar-subtitle {
+  font-size: 10px !important;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+  right: 0;
+  left: auto;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute !important;
+}
+
+.nav .navbar-nav {
+  flex-direction: row !important;
 }
 
 @media (min-width: 992px) {
