@@ -65,9 +65,10 @@ body {
   .sidebar-nav {
     transform: none !important;
     visibility: visible !important;
-    top: var(--topNavbarHeight) !important;
+    //top: var(--topNavbarHeight) !important;
     height: calc(100% - var(--topNavbarHeight)) !important;
   }
+  #nav-header,
   main {
     margin-left: var(--offcanvas-width);
   }
