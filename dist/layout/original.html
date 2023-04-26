@@ -8,21 +8,63 @@
   </head>
   <body>
     <!-- start navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary border fixed-top bg-light" id="nav-header">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border border-start-0 border-end-0 fixed-top bg-white py-3" id="nav-header">
       <div class="container-fluid">
-        <a class="navbar-brand d-md-none d-sm-inline" href="#">
+        <a class="navbar-brand d-inline d-md-none" href="#">
           <!-- trigger offcanvas -->
           <img src="asset/images/logo.png" width="25px" alt="">
-          <span class="fw-bold d-none d-sm-inline">Grafisity</span>
+          <span class="fw-bold">Grafisity</span>
           <button class="navbar-toggler me-2 px-1 text-dark border-0 fs-6" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
             <i class="bi bi-chevron-double-right"></i>
           </button>
         </a>
-        <div class="nav">
+        <div class="nav d-none d-md-inline">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item px-3">
-              <a class="nav-link bg-secondary" href="#">
-                Dashboard
+              <a class="nav-link text-dark" href="#">
+                Core
+              </a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-dark" href="#">
+                Pages
+              </a>
+            </li>
+            <li class="nav-item px-3 dropdown">
+              <a class="nav-link text-dark position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-dark" href="#">
+                Datatable
+              </a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-dark" href="#">
+                Components
               </a>
             </li>
           </ul>
@@ -30,12 +72,12 @@
         <div class="nav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item px-3">
-              <a class="nav-link" href="#">
+              <a class="nav-link text-dark" href="#">
                 <i class="bi bi-binoculars-fill"></i>
               </a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link position-relative" data-bs-toggle="offcanvas" href="#offcanvass-messagge-navbar" role="button" aria-controls="offcanvass-messagge-navbar">
+              <a class="nav-link text-dark position-relative" data-bs-toggle="offcanvas" href="#offcanvass-messagge-navbar" role="button" aria-controls="offcanvass-messagge-navbar">
                 <i class="bi bi-chat-text-fill"></i>
                 <span class="position-absolute top-10 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
                   <span class="visually-hidden">New alerts</span>
@@ -43,13 +85,13 @@
               </a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#">
+              <a class="nav-link text-dark" href="#">
                 <i class="bi bi-grid-fill"></i>
               </a>
             </li>
             
             <li class="nav-item px-3 dropdown">
-              <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link text-dark position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-archive-fill"></i>
                 <span class="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 8px;">
                   99+
@@ -65,7 +107,7 @@
             </li>
 
             <li class="nav-item ps-3 dropdown">
-              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-person-fill"></i>
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
@@ -82,14 +124,16 @@
     <!-- end navbar -->
 
     <!-- start offcanvas -->
-    <div class="offcanvas offcanvas-start sidebar-nav vh-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" id="nav-sidebar">
+    <div class="offcanvas offcanvas-start sidebar-nav vh-100 bg-white" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" id="nav-sidebar">
       <div class="offcanvas-body p-0">
-        <nav class="mt-4 d-flex flex-column gap-5">
-          <a class="navbar-brand px-3 d-none d-sm-inline" href="#">
+        <nav class="navbar py-3">
+          <a class="navbar-brand px-3 d-none d-sm-inline d-flex" href="#">
             <!-- trigger offcanvas -->
             <img src="asset/images/logo.png" width="25px" alt="">
-            <span class="fw-bold">Grafisity</span>
+            <span class="fw-bold align-self-center">Grafisity</span>
           </a>
+        </nav>
+        <nav class="mt-4 d-flex flex-column gap-5 position-relative">
           <ul class="navbar-nav">
             <li>
               <div class="text-uppercase text-muted small fw-semibold px-3 sidebar-subtitle">core</div>
@@ -106,29 +150,119 @@
               <hr class="" />
             </li>
             <li>
-              <div class="text-uppercase text-muted small fw-semibold px-3 sidebar-subtitle">interfaces</div>
+              <div class="text-uppercase text-muted small fw-semibold px-3 sidebar-subtitle">pages</div>
             </li>
             <li>
-              <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#pages-account" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <span class="me-2 fs-7">
-                  <i class="bi bi-grid-3x3-gap-fill"></i>
+                  <i class="bi bi-people-fill"></i>
                 </span>
-                <span class="fs-7">Tables</span>
+                <span class="fs-7">Account</span>
                 <span class="right-icon ms-auto fs-7">
                   <i class="bi bi-chevron-down"></i>
                 </span>
               </a>
-              <div class="collapse" id="collapseExample">
+              <div class="collapse show" id="pages-account">
                 <div class="">
                   <ul class="navbar-nav">
                     <li>
                       <a href="" class="nav-link px-5">
-                        <span class="fs-7">Tables</span>
+                        <span class="fs-7">Overview</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="nav-link px-5">
+                        <span class="fs-7">User Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="nav-link px-5">
+                        <span class="fs-7">Setting</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="nav-link px-5">
+                        <span class="fs-7">Activity</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="nav-link px-5">
+                        <span class="fs-7">Logs</span>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
+            </li>
+            <li>
+              <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#pages-career" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <span class="me-2 fs-7">
+                  <i class="bi bi-ladder"></i>
+                </span>
+                <span class="fs-7">Career</span>
+                <span class="right-icon ms-auto fs-7">
+                  <i class="bi bi-chevron-down"></i>
+                </span>
+              </a>
+              <div class="collapse show" id="pages-career">
+                <div class="">
+                  <ul class="navbar-nav">
+                    <li>
+                      <a href="" class="nav-link nav-link-active px-5">
+                        <span class="fs-7">List</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="nav-link px-5">
+                        <span class="fs-7">Detail</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="nav-link px-5">
+                        <span class="fs-7">Apply</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="my-1">
+              <hr class="" />
+            </li>
+            <li>
+              <div class="text-uppercase text-muted small fw-semibold px-3 sidebar-subtitle">follow us</div>
+            </li>
+            <li>
+              <a href="" class="nav-link px-3 active">
+                <span class="me-2 fs-7">
+                  <i class="bi bi-github"></i>
+                </span>
+                <span class="fs-7">Github</span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="nav-link px-3 active">
+                <span class="me-2 fs-7">
+                  <i class="bi bi-instagram"></i>
+                </span>
+                <span class="fs-7">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="nav-link px-3 active">
+                <span class="me-2 fs-7">
+                  <i class="bi bi-twitter"></i>
+                </span>
+                <span class="fs-7">Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="nav-link px-3 active">
+                <span class="me-2 fs-7">
+                  <i class="bi bi-arrow-right-circle-fill"></i>
+                </span>
+                <span class="fs-7">Grafisity.com</span>
+              </a>
             </li>
           </ul>
         </nav>
@@ -136,48 +270,9 @@
     </div>
     <!-- end offcanvas -->
 
-    <main class="pt-3 mt-5">
-      <div class="container-fluid">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nostrum magni veritatis? Laborum libero ullam dicta placeat officia maxime corporis ratione dolor voluptatem, temporibus dolores doloremque totam? Ducimus, reiciendis corporis?
+    <main style="margin-top: 75px;">
+      <div class="container-fluid p-3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta laboriosam ratione expedita, error eius voluptate quidem repellat, esse cupiditate dolorum incidunt doloribus! In reiciendis quas, quibusdam id laudantium quisquam illo.
       </div>
     </main>
 
@@ -191,16 +286,7 @@
         <div>
           Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
         </div>
-        <div class="dropdown mt-3">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-            Dropdown button
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
+        
       </div>
     </div>
     <!-- end offcanvas messages navbar -->
