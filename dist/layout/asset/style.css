@@ -8,6 +8,7 @@
 
 body {
   font-family: var(--bs-font-family) !important;
+  font-size: 14px !important;
 }
 
 .fs-7 {
@@ -36,11 +37,11 @@ body {
   font-size: 10px !important;
 }
 
-/* .dropdown:hover > .dropdown-menu {
+.dropdown:hover > .dropdown-menu {
   display: block;
   right: 0;
   left: auto;
-} */
+}
 
 .dropdown > .dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
@@ -87,4 +88,9 @@ body {
 .btn-primary{
   background-color: #702ADA !important;
   border-color: #702ADA !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: white !important;
+  border-bottom: 2px solid #702ADA;
 }
