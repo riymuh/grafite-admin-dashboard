@@ -1,3 +1,34 @@
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.bg-primary{
+    background-color: #702ada !important;
+}
+
+.text-primary{
+    color: #702ada !important;
+}
+
+.btn-primary {
+    background-color: #702ada !important;
+    border-color: #702ada !important;
+}
+
+.border-secondary{
+    border-color: #8888A2 !important;
+}
+
+.text-secondary{
+    color: #8888A2 !important;
+}
+
+.bg-secondary {
+    background-color: #1d1e2c !important;
+    color: white !important;
+}
+
+.btn-secondary {
+    background-color: #1d1e2c !important;
+    color: white !important;
+}

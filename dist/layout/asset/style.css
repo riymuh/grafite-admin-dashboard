@@ -39,7 +39,6 @@ body {
 
 .dropdown:hover > .dropdown-menu {
   display: block;
-  right: 0;
   left: auto;
 }
 
@@ -75,22 +74,39 @@ body {
   }
 }
 
-.bg-white{
+.bg-white {
   background-color: #fff;
 }
 
-.nav-link-active{
-  background-color: #702ADA;
-  color:white !important;
+.bg-secondary {
+  background: #290628 !important;
+  background-color: #290628 !important;
+}
+
+.nav-link-active {
+  border-left: 2px solid #702ada;
+  color: white !important;
   font-weight: 800 !important;
 }
 
-.btn-primary{
-  background-color: #702ADA !important;
-  border-color: #702ADA !important;
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: white !important;
+  border-bottom: 2px solid #702ada;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  background-color: white !important;
-  border-bottom: 2px solid #702ADA;
+#nav-sidebar-body::-webkit-scrollbar-track {
+  padding: 2px 0 !important;
+  background-color: #1d1e2c !important;
+}
+
+#nav-sidebar-body::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+#nav-sidebar-body::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  border: 3px solid transparent !important;
+  background-clip: content-box;
+  background-color: #8888a2 !important;
 }
