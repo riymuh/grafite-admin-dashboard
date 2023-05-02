@@ -1,39 +1,70 @@
 <!doctype html>
+<!--
+Author: Grafisity
+Product Name: GT Work
+Product Version: 1.0.0
+Website: https://grafisity.com
+Contact: info@grafisity.com
+Follow:
+  www.twitter.com/grafisity
+  www.instagram.com/grafisity
+License: You must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Webpack</title>
+    <title>GT Work</title>
+    <!-- begin::css -->
     <link rel="stylesheet" href="asset/style.css">
+    <!-- end::css -->
   </head>
-  <body class="position-relative">
-    <!-- start navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary border border-start-0 border-end-0 fixed-top bg-white py-3 d-none d-sm-block" id="nav-header">
+  <body>
+    <!-- begin::navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm fixed-top bg-white py-3" id="nav-header">
       <div class="container-fluid">
         <a class="navbar-brand d-inline d-md-none" href="#">
           <!-- trigger offcanvas -->
           <img src="asset/images/logo.png" width="25px" alt="">
-          <span class="fw-bold">Grafisity</span>
+          <span class="fw-bold">GT Work</span>
+          <button class="navbar-toggler me-2 px-1 text-dark border-0 fs-6" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="bi bi-chevron-double-right"></i>
+          </button>
         </a>
         <div class="nav d-none d-md-inline">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item pe-3">
-              <a class="nav-link text-dark" href="#">
+              <a class="nav-link text-secondary" href="#">
                 Core
               </a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link text-dark" href="#">
+              <a class="nav-link btn btn-secondary rounded-pill px-3" href="#">
                 Pages
               </a>
             </li>
+            <li class="nav-item px-3 dropdown">
+              <a class="nav-link text-dark position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu" style="z-index: 99999 !important;">
+                <div class="p-4" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </ul>
+            </li>
             <li class="nav-item px-3">
-              <a class="nav-link text-dark" href="#">
+              <a class="nav-link text-secondary" href="#">
                 Datatable
               </a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link text-dark" href="#">
+              <a class="nav-link text-secondary" href="#">
                 Components
               </a>
             </li>
@@ -42,14 +73,14 @@
         <div class="nav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item px-3">
-              <a class="nav-link text-dark" href="#">
-                <i class="bi bi-binoculars-fill"></i>
+              <a class="nav-link text-secondary" href="#">
+                <i class="bi bi-binoculars fs-6"></i>
               </a>
             </li>
             <li class="nav-item px-3 dropdown">
-              <a class="nav-link text-dark position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-archive-fill"></i>
-                <span class="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 8px;">
+              <a class="nav-link text-secondary position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-archive fs-6"></i>
+                <span class="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-primary" style="font-size: 8px;">
                   99+
                   <span class="visually-hidden">unread messages</span>
                 </span>
@@ -62,64 +93,62 @@
               </ul>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link text-dark position-relative" data-bs-toggle="offcanvas" href="#offcanvass-notification-navbar" role="button" aria-controls="offcanvass-notification-navbar">
-                <i class="bi bi-chat-text-fill"></i>
-                <span class="position-absolute top-10 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+              <a class="nav-link text-secondary position-relative" data-bs-toggle="offcanvas" href="#offcanvass-notification-navbar" role="button" aria-controls="offcanvass-notification-navbar">
+                <i class="bi bi-chat-text fs-6"></i>
+                <span class="position-absolute top-10 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
                   <span class="visually-hidden">New alerts</span>
                 </span>
               </a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link text-dark" data-bs-toggle="offcanvas" href="#offcanvass-general-setting-navbar" role="button" aria-controls="offcanvass-general-setting-navbar">
-                <i class="bi bi-grid-fill"></i>
+              <a class="nav-link text-secondary" data-bs-toggle="offcanvas" href="#offcanvass-general-setting-navbar" role="button" aria-controls="offcanvass-general-setting-navbar">
+                <i class="bi bi-grid fs-6"></i>
               </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- end navbar -->
+    <!-- end::navbar -->
 
-    <!-- start offcanvas -->
-    <div class="offcanvas offcanvas-start sidebar-nav vh-100 bg-white" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" id="nav-sidebar">
-      <div class="offcanvas-body p-0">
-        <nav class="navbar d-none d-sm-block py-3">
-          <a class="navbar-brand px-3 d-none d-sm-inline d-flex" href="#">
+    <!-- begin::sidebar -->
+    <div class="offcanvas offcanvas-start sidebar-nav vh-100 bg-secondary" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-body p-0" id="nav-sidebar-body">
+        <nav class="navbar py-3">
+          <a class="navbar-brand px-3 d-none d-sm-inline d-flex align-items-center" href="#">
             <!-- trigger offcanvas -->
             <img src="asset/images/logo.png" width="25px" alt="">
-            <span class="fw-bold align-self-center">Grafisity</span>
+            <span class="align-self-center text-white"><span class="fw-bold ">GT</span> Work</span>
           </a>
         </nav>
-        <nav class="mt-4 d-flex flex-column gap-5 position-relative">
+        <nav class="mt-4 d-flex flex-column position-relative h-100">
           <ul class="navbar-nav">
             <li>
-              <div class="text-uppercase text-muted small fw-semibold px-3 sidebar-subtitle">core</div>
+              <div class="text-uppercase text-secondary small fw-semibold px-3 sidebar-subtitle">core</div>
             </li>
             <li>
-              <a href="" class="nav-link px-3 active">
-                <span class="me-2 fs-7">
-                  <i class="bi bi-grid-3x3-gap-fill"></i>
+              <a href="" class="nav-link px-3 text-secondary">
+                <span class="me-2 fs-6 text-white">
+                  <i class="bi bi-grid-3x3-gap"></i>
                 </span>
                 <span class="fs-7">Dashboard</span>
               </a>
             </li>
-            <li class="my-1">
-              <hr class="" />
+            <li class="my-2"></li>
+            <li>
+              <div class="text-uppercase text-secondary small fw-semibold px-3 sidebar-subtitle">pages</div>
             </li>
             <li>
-              <div class="text-uppercase text-muted small fw-semibold px-3 sidebar-subtitle">pages</div>
-            </li>
-            <li>
-              <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#pages-account" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <span class="me-2 fs-7">
-                  <i class="bi bi-people-fill"></i>
+              <a class="nav-link px-3 sidebar-link text-secondary" data-bs-toggle="collapse" href="#pages-account" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <span class="me-2 fs-6 text-white">
+                  <i class="bi bi-people"></i>
                 </span>
                 <span class="fs-7">Account</span>
                 <span class="right-icon ms-auto fs-7">
                   <i class="bi bi-chevron-down"></i>
                 </span>
               </a>
-              <div class="collapse show" id="pages-account">
+              <div class="collapse text-secondary" id="pages-account">
                 <div class="">
                   <ul class="navbar-nav">
                     <li>
@@ -153,7 +182,7 @@
             </li>
             <li>
               <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#pages-career" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <span class="me-2 fs-7">
+                <span class="me-2 fs-6">
                   <i class="bi bi-ladder"></i>
                 </span>
                 <span class="fs-7">Career</span>
@@ -161,7 +190,7 @@
                   <i class="bi bi-chevron-down"></i>
                 </span>
               </a>
-              <div class="collapse show" id="pages-career">
+              <div class="collapse show text-secondary" id="pages-career">
                 <div class="">
                   <ul class="navbar-nav">
                     <li>
@@ -183,51 +212,53 @@
                 </div>
               </div>
             </li>
-            <li class="my-1">
-              <hr class="" />
+            <li class="my-2"></li>
+            <li>
+              <div class="text-uppercase text-secondary small fw-semibold px-3 sidebar-subtitle">follow us</div>
             </li>
             <li>
-              <div class="text-uppercase text-muted small fw-semibold px-3 sidebar-subtitle">follow us</div>
-            </li>
-            <li>
-              <a href="" class="nav-link px-3 active">
-                <span class="me-2 fs-7">
+              <a href="" class="nav-link px-3 text-secondary">
+                <span class="me-2 fs-6 text-white">
                   <i class="bi bi-github"></i>
                 </span>
                 <span class="fs-7">Github</span>
               </a>
             </li>
             <li>
-              <a href="" class="nav-link px-3 active">
-                <span class="me-2 fs-7">
+              <a href="" class="nav-link px-3 text-secondary">
+                <span class="me-2 fs-6 text-white">
                   <i class="bi bi-instagram"></i>
                 </span>
                 <span class="fs-7">Instagram</span>
               </a>
             </li>
             <li>
-              <a href="" class="nav-link px-3 active">
-                <span class="me-2 fs-7">
+              <a href="" class="nav-link px-3 text-secondary">
+                <span class="me-2 fs-6 text-white">
                   <i class="bi bi-twitter"></i>
                 </span>
                 <span class="fs-7">Twitter</span>
               </a>
             </li>
             <li>
-              <a href="" class="nav-link px-3 active">
-                <span class="me-2 fs-7">
-                  <i class="bi bi-arrow-right-circle-fill"></i>
+              <a href="" class="nav-link px-3 text-secondary">
+                <span class="me-2 fs-6 text-white">
+                  <i class="bi bi-arrow-right-circle"></i>
                 </span>
                 <span class="fs-7">Grafisity.com</span>
               </a>
             </li>
           </ul>
+          <div class="bg-secondary py-4 sticky-bottom shadow-sm text-center mt-auto px-3">
+            <a href="" class="btn btn-primary rounded-pill fs-7 d-block">Upgrade to pro</a>
+          </div>
         </nav>
       </div>
     </div>
-    <!-- end offcanvas -->
+    <!-- end::sidebar -->
 
-    <main>
+    <!-- begin::content -->
+    <main style="margin-top: 75px;">
       <div class="container-fluid p-3">
         <div class="d-flex flex-column gap-3">
           <div id="card-panel">
@@ -258,8 +289,9 @@
         </div>
       </div>
     </main>
+    <!-- end::content -->
 
-    <!-- start offcanvas notification navbar -->
+    <!-- begin::offcanvas_notification_navbar -->
     <div class="offcanvas offcanvas-end shadow-lg" tabindex="-1" id="offcanvass-notification-navbar" aria-labelledby="offcanvasExampleLabel" data-bs-backdrop="false">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">Notifications</h5>
@@ -357,9 +389,9 @@
         </div>
       </div>
     </div>
-    <!-- end offcanvas notification navbar -->
+    <!-- end::offcanvas_notification_navbar -->
 
-    <!-- start offcanvas general setting navbar -->
+    <!-- begin::offcanvas_general_setting_navbar -->
     <div class="offcanvas offcanvas-end shadow-lg" tabindex="-1" id="offcanvass-general-setting-navbar" aria-labelledby="offcanvasExampleLabel" data-bs-backdrop="false">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">Menu</h5>
@@ -418,7 +450,7 @@
         </div>
       </div>
     </div>
-    <!-- end offcanvas general setting navbar -->
+    <!-- end::offcanvas_general_setting_navbar -->
 
     <!-- start menu bar mobile -->
     <div class="px-3 py-2 bg-white shadow-lg text-dark position-fixed bottom-0 w-100 d-block d-sm-block d-md-none">
@@ -460,7 +492,9 @@
     </div>
     <!-- end menu bar mobile -->
 
+    <!-- begin::scripts -->
     <script src="../main.js"></script>
     <script src="asset/script.js"></script>
+    <!-- end::scripts -->
   </body>
 </html>
