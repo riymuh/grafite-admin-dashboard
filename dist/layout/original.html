@@ -6,17 +6,14 @@
     <title>Bootstrap w/ Webpack</title>
     <link rel="stylesheet" href="asset/style.css">
   </head>
-  <body>
+  <body class="position-relative">
     <!-- start navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary border border-start-0 border-end-0 fixed-top bg-white py-3" id="nav-header">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border border-start-0 border-end-0 fixed-top bg-white py-3 d-none d-sm-block" id="nav-header">
       <div class="container-fluid">
         <a class="navbar-brand d-inline d-md-none" href="#">
           <!-- trigger offcanvas -->
           <img src="asset/images/logo.png" width="25px" alt="">
           <span class="fw-bold">Grafisity</span>
-          <button class="navbar-toggler me-2 px-1 text-dark border-0 fs-6" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-            <i class="bi bi-chevron-double-right"></i>
-          </button>
         </a>
         <div class="nav d-none d-md-inline">
           <ul class="navbar-nav ms-auto">
@@ -29,33 +26,6 @@
               <a class="nav-link text-dark" href="#">
                 Pages
               </a>
-            </li>
-            <li class="nav-item px-3 dropdown">
-              <a class="nav-link text-dark position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Pages
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
-                  </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
-                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
-                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
-                  <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
-                </div>
-              </ul>
             </li>
             <li class="nav-item px-3">
               <a class="nav-link text-dark" href="#">
@@ -113,7 +83,7 @@
     <!-- start offcanvas -->
     <div class="offcanvas offcanvas-start sidebar-nav vh-100 bg-white" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" id="nav-sidebar">
       <div class="offcanvas-body p-0">
-        <nav class="navbar py-3">
+        <nav class="navbar d-none d-sm-block py-3">
           <a class="navbar-brand px-3 d-none d-sm-inline d-flex" href="#">
             <!-- trigger offcanvas -->
             <img src="asset/images/logo.png" width="25px" alt="">
@@ -257,9 +227,35 @@
     </div>
     <!-- end offcanvas -->
 
-    <main style="margin-top: 75px;">
+    <main>
       <div class="container-fluid p-3">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta laboriosam ratione expedita, error eius voluptate quidem repellat, esse cupiditate dolorum incidunt doloribus! In reiciendis quas, quibusdam id laudantium quisquam illo.
+        <div class="d-flex flex-column gap-3">
+          <div id="card-panel">
+            <div class="d-flex gap-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -371,7 +367,7 @@
       </div>
       <div class="offcanvas-body">
         <div class="row g-4">
-          <div class="col-md-4">
+          <div class="col col-sm-6 col-md-4">
             <div class="card h-100">
               <div class="card-body d-flex flex-column align-items-center gap-2">
                 <i class="bi bi-gear fs-3"></i>
@@ -379,7 +375,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col col-sm-6 col-md-4">
             <div class="card h-100">
               <div class="card-body d-flex flex-column align-items-center gap-2">
                 <i class="bi bi-people fs-3"></i>
@@ -387,7 +383,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col col-sm-6 col-md-4">
             <div class="card h-100">
               <div class="card-body d-flex flex-column align-items-center gap-2">
                 <i class="bi bi-chat-square-heart fs-3"></i>
@@ -395,7 +391,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col col-sm-6 col-md-4">
             <div class="card h-100">
               <div class="card-body d-flex flex-column align-items-center gap-2">
                 <i class="bi bi-activity fs-3"></i>
@@ -403,7 +399,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col col-sm-6 col-md-4">
             <div class="card h-100">
               <div class="card-body d-flex flex-column align-items-center gap-2">
                 <i class="bi bi-list-check fs-3"></i>
@@ -411,7 +407,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col col-sm-6 col-md-4">
             <div class="card h-100">
               <div class="card-body d-flex flex-column align-items-center gap-2">
                 <i class="bi bi-box-arrow-right fs-3"></i>
@@ -425,6 +421,43 @@
     <!-- end offcanvas general setting navbar -->
 
     <!-- start menu bar mobile -->
+    <div class="px-3 py-2 bg-white shadow-lg text-dark position-fixed bottom-0 w-100 d-block d-sm-block d-md-none">
+      <ul class="navbar-nav d-flex flex-row justify-content-between">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="bi bi-binoculars-fill"></i>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-dark position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-archive-fill"></i>
+            <span class="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 8px;">
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Actionasasa</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark position-relative" data-bs-toggle="offcanvas" href="#offcanvass-notification-navbar" role="button" aria-controls="offcanvass-notification-navbar">
+            <i class="bi bi-chat-text-fill"></i>
+            <span class="position-absolute top-10 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" data-bs-toggle="offcanvas" href="#offcanvass-general-setting-navbar" role="button" aria-controls="offcanvass-general-setting-navbar">
+            <i class="bi bi-grid-fill"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
     <!-- end menu bar mobile -->
 
     <script src="../main.js"></script>

@@ -73,6 +73,9 @@ body {
   main {
     margin-left: var(--offcanvas-width);
   }
+  main{
+    margin-top: 75px;
+  }
 }
 
 .bg-white{
