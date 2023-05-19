@@ -11,5 +11,94 @@
       <button class="btn btn-primary">Primary button</button>
     </div>
     <script src="./main.js"></script>
+    <script>
+      //function
+      // function Mahasiswa(nama, energi){
+      //   let mahasiswa = {};
+      //   mahasiswa.nama = nama;
+      //   mahasiswa.energi = energi;
+      //   mahasiswa.makan = function(energi){
+      //     return this.energi += energi;
+      //   }
+
+      //   return mahasiswa;
+      // }
+
+      // let riyadh = Mahasiswa('riyadh', 10);
+
+      //construct
+      // function Mahasiswa(nama, energi){
+      //   //let mahasiswa = {};
+      //   this.nama = nama;
+      //   this.energi = energi;
+      //   this.makan = function(energi){
+      //     return this.energi += energi;
+      //   }
+      // }
+
+      // let riyadh = new Mahasiswa('riyadh', 10);
+
+      // //function
+      // const methodMahasiswa = {
+      //   makan: function(porsi){
+      //     this.energi += porsi;
+      //     return this;
+      //   },
+      //   main: function(energi){
+      //     this.energi -= energi;
+      //     return this
+      //   },
+      // }
+
+      // function Mahasiswa(nama, energi){
+      //   let mahasiswa = Object.create(methodMahasiswa);
+      //   mahasiswa.nama = nama;
+      //   mahasiswa.energi = energi;
+
+      //   return mahasiswa;
+      // }
+
+      // let riyadh = Mahasiswa('riyadh', 10);
+
+       //function
+      //  const methodMahasiswa = {
+      //   makan: function(porsi){
+      //     this.energi += porsi;
+      //     return this;
+      //   },
+      //   main: function(energi){
+      //     this.energi -= energi;
+      //     return this
+      //   },
+      // }
+
+      // function Mahasiswa(nama, energi){
+      //   this.nama = nama;
+      //   this.energi = energi;
+      // }
+
+      // Mahasiswa.prototype.makan = function(porsi)
+      // {
+      //   this.energi += porsi;
+      // }
+
+      // let riyadh = new Mahasiswa('riyadh', 10);
+
+      class Mahasiswa
+      {
+        constructor(name, energi)
+        {
+          this.name = name;
+          this.energi = energi;
+        }
+
+        makan(porsi)
+        {
+          this.energi += porsi;
+        }
+      }
+
+      let riyadh = new Mahasiswa('riyadh', 100);
+    </script>
   </body>
 </html>
