@@ -1,0 +1,113 @@
+<!doctype html>
+<!--
+Author: Grafisity
+Product Name: Grafite
+Product Version: 1.0.0
+Website: https://grafisity.com
+Contact: info@grafisity.com
+Follow:
+  www.twitter.com/grafisity
+  www.instagram.com/grafisity
+License: You must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grafite</title>
+    <!-- begin::css -->
+    <!-- end::css -->
+  </head>
+  <body style="padding: 50px">
+    <!-- begin::content -->
+    <div class="d-flex flex-column gap-4">
+        <section id="header-content">
+            <div class="d-flex justify-content-between gap-4">
+                <h5 class="text-dark">Blog</h5>
+                <div class="">
+                    <button type="button" class="btn btn-primary rounded-pill px-3">Add</button>
+                </div>
+            </div>
+        </section>
+        <section id="body-content">
+            <div class="card bg-white border-0 shadow-sm">
+                <div class="card-header bg-light">
+                    <div class="d-flex gap-4 justify-content-between">
+                        <div>
+                            <select class="form-select">
+                                <option selected>Limit</option>
+                                <option value="1">10</option>
+                                <option value="2">20</option>
+                                <option value="3">50</option>
+                            </select>
+                        </div>
+                        <div>
+                            <div class="row g-3 align-items-center">
+                                <div class="col-auto">
+                                    <select class="form-select">
+                                        <option selected>Category</option>
+                                        <option value="1">Programming</option>
+                                        <option value="2">DevOps</option>
+                                        <option value="3">UIUX</option>
+                                        <option value="3">Front End</option>
+                                        <option value="3">Back End</option>
+                                        <option value="3"></option>
+                                    </select>
+                                </div>
+                                <div class="col-auto">
+                                  <input type="text" class="form-control" placeholder="Search by name...">
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-primary rounded-pill px-3">Filter</button>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">1</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary rounded-circle">
+                                        <span class="fs-7">
+                                            <i class="bi bi-pencil-square"></i>
+                                        </span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">2</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">3</td>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- end::content -->
+
+    <!-- begin::scripts -->
+    <script src="../../main.js"></script>
+    <!-- end::scripts -->
+  </body>
+</html>
