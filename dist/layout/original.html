@@ -109,7 +109,7 @@ License: You must have a valid license purchased only from above link in order t
   <!-- end::navbar -->
 
   <!-- begin::sidebar -->
-  <div class="offcanvas offcanvas-start sidebar-nav vh-100 bg-secondary" tabindex="-1" id="offcanvasExample"
+  <div class="offcanvas offcanvas-start sidebar-nav vh-100 bg-dark" tabindex="-1" id="offcanvasExample"
     aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-body p-0" id="nav-sidebar-body">
       <nav class="navbar py-3">
@@ -537,7 +537,7 @@ License: You must have a valid license purchased only from above link in order t
             </a>
           </li>
         </ul>
-        <div class="bg-secondary py-4 sticky-bottom shadow-sm text-center mt-auto px-3">
+        <div class="bg-dark py-4 sticky-bottom shadow-sm text-center mt-auto px-3">
           <a href="" class="btn btn-success rounded-pill  d-block"><i class="bi bi-github"></i> Github</a>
         </div>
       </nav>
@@ -553,7 +553,7 @@ License: You must have a valid license purchased only from above link in order t
             <div class="d-flex justify-content-between align-items-center gap-4">
                 <h5 class="text-dark fw-bold">Users</h5>
                 <div class="">
-                    <button type="button" class="btn btn-primary rounded-pill px-3 "><i class="bi bi-person-plus-fill"></i> Add User</button>
+                    <button type="button" class="btn btn-primary shadow-sm rounded-pill px-3 "><i class="bi bi-person-plus-fill"></i> Add User</button>
                 </div>
             </div>
         </section>
@@ -618,21 +618,21 @@ License: You must have a valid license purchased only from above link in order t
             </div>
         </section>
         <section id="body-content">
-            <div class="card  border-0 shadow-sm">
+            <div class="card border-0 shadow-sm">
                 <div class="card-header bg-light py-3">
                     <div class="d-flex gap-4 justify-content-between">
                         <div>
-                            <input type="text" class="form-control" placeholder="Search users">
+                            <input type="text" class="form-control border-0 bg-secondary" placeholder="Search users">
                         </div>
                         <div>
                             <div class="row g-3 align-items-center">
                                 <div class="col-auto">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-light border "><i class="bi bi-download"></i> Export</button>
-                                        <button type="button" class="btn btn-light border dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <button type="button" class="btn btn-secondary border-0"><i class="bi bi-download"></i> Export</button>
+                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                                           <span class="visually-hidden">Toggle Dropdown</span>
                                         </button>
-                                        <ul class="dropdown-menu">
+                                        <ul class="dropdown-menu border-0 shadow-sm">
                                           <li><a class="dropdown-item" href="#">Excel</a></li>
                                           <li><a class="dropdown-item" href="#">PDF</a></li>
                                           <li><a class="dropdown-item" href="#">CSV</a></li>
@@ -643,8 +643,8 @@ License: You must have a valid license purchased only from above link in order t
                                 </div>
                                 <div class="col-auto">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-light border "><i class="bi bi-filter-right"></i> Filter</button>
-                                        <button type="button" class="btn btn-light border dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <button type="button" class="btn btn-secondary border-0"><i class="bi bi-filter-right"></i> Filter</button>
+                                        <button type="button" class="btn btn-light bg-secondary border-0 dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                                           <span class="visually-hidden">Toggle Dropdown</span>
                                         </button>
                                         <ul class="dropdown-menu">
@@ -662,7 +662,7 @@ License: You must have a valid license purchased only from above link in order t
                 </div>
                 <div class="card-body table-responsive">
                     <table class="table table-borderless">
-                        <thead class="">
+                        <thead>
                             <tr>
                                 <th scope="col">
                                     <input class="form-check-input" type="checkbox" value="">
@@ -729,19 +729,19 @@ License: You must have a valid license purchased only from above link in order t
                         </div>
                         <nav aria-label="...">
                             <ul class="pagination">
-                              <li class="page-item disabled ">
-                                <a class="page-link">Prev</a>
-                              </li>
-                              <li class="page-item"><a class="page-link" href="#">1</a></li>
-                              <li class="page-item active" aria-current="page">
-                                <a class="page-link" href="#">2</a>
-                              </li>
-                              <li class="page-item"><a class="page-link" href="#">3</a></li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                              </li>
+                                <li class="page-item disabled ">
+                                    <a class="page-link">Prev</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active" aria-current="page">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
                             </ul>
-                          </nav>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -762,7 +762,7 @@ License: You must have a valid license purchased only from above link in order t
   <!-- end::content -->
 
   <!-- begin::offcanvas_notification_navbar -->
-  <div class="offcanvas offcanvas-end shadow-lg bg-secondary" tabindex="-1" id="offcanvass-notification-navbar"
+  <div class="offcanvas offcanvas-end shadow-lg bg-dark" tabindex="-1" id="offcanvass-notification-navbar"
     aria-labelledby="offcanvasExampleLabel" data-bs-backdrop="false">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">Notifications</h5>
@@ -868,7 +868,7 @@ License: You must have a valid license purchased only from above link in order t
   <!-- end::offcanvas_notification_navbar -->
 
   <!-- begin::offcanvas_general_setting_navbar -->
-  <div class="offcanvas offcanvas-end shadow-lg bg-secondary" tabindex="-1" id="offcanvass-general-setting-navbar"
+  <div class="offcanvas offcanvas-end shadow-lg bg-dark" tabindex="-1" id="offcanvass-general-setting-navbar"
     aria-labelledby="offcanvasExampleLabel" data-bs-backdrop="false">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">Menu</h5>
@@ -879,7 +879,7 @@ License: You must have a valid license purchased only from above link in order t
     <div class="offcanvas-body">
       <div class="row g-4">
         <div class="col col-sm-6 col-md-4">
-          <div class="card h-100 bg-secondary border-0">
+          <div class="card h-100 bg-dark border-0">
             <div class="card-body d-flex flex-column align-items-center gap-2">
               <i class="bi bi-gear fs-3"></i>
               <span class="">General<br />Setting</span>
@@ -887,7 +887,7 @@ License: You must have a valid license purchased only from above link in order t
           </div>
         </div>
         <div class="col col-sm-6 col-md-4">
-          <div class="card h-100 bg-secondary border-0">
+          <div class="card h-100 bg-dark border-0">
             <div class="card-body d-flex flex-column align-items-center gap-2">
               <i class="bi bi-people fs-3"></i>
               <span class="">Users</span>
@@ -895,7 +895,7 @@ License: You must have a valid license purchased only from above link in order t
           </div>
         </div>
         <div class="col col-sm-6 col-md-4">
-          <div class="card h-100 bg-secondary border-0">
+          <div class="card h-100 bg-dark border-0">
             <div class="card-body d-flex flex-column align-items-center gap-2">
               <i class="bi bi-chat-square-heart fs-3"></i>
               <span class="">Social<br />Media</span>
@@ -903,7 +903,7 @@ License: You must have a valid license purchased only from above link in order t
           </div>
         </div>
         <div class="col col-sm-6 col-md-4">
-          <div class="card h-100 bg-secondary border-0">
+          <div class="card h-100 bg-dark border-0">
             <div class="card-body d-flex flex-column align-items-center gap-2">
               <i class="bi bi-activity fs-3"></i>
               <span class="">Activity</span>
@@ -911,7 +911,7 @@ License: You must have a valid license purchased only from above link in order t
           </div>
         </div>
         <div class="col col-sm-6 col-md-4">
-          <div class="card h-100 bg-secondary border-0">
+          <div class="card h-100 bg-dark border-0">
             <div class="card-body d-flex flex-column align-items-center gap-2">
               <i class="bi bi-list-check fs-3"></i>
               <span class="">Log</span>
@@ -919,7 +919,7 @@ License: You must have a valid license purchased only from above link in order t
           </div>
         </div>
         <div class="col col-sm-6 col-md-4">
-          <div class="card h-100 bg-secondary border-0">
+          <div class="card h-100 bg-dark border-0">
             <div class="card-body d-flex flex-column align-items-center gap-2">
               <i class="bi bi-box-arrow-right fs-3"></i>
               <span class="">Logout</span>
@@ -932,7 +932,7 @@ License: You must have a valid license purchased only from above link in order t
   <!-- end::offcanvas_general_setting_navbar -->
 
   <!-- begin::menu_bar_mobile -->
-  <div class="px-3 py-2 bg-secondary shadow-lg position-fixed bottom-0 w-100 d-block d-sm-block d-md-none">
+  <div class="px-3 py-2 bg-dark shadow-lg position-fixed bottom-0 w-100 d-block d-sm-block d-md-none">
     <ul class="navbar-nav d-flex flex-row justify-content-between">
       <li class="nav-item">
         <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
