@@ -4,7 +4,6 @@
   --topNavbarHeight: 57px;
 }
 
-
 .sidebar-nav {
   width: var(--offcanvas-width) !important;
 }
@@ -65,15 +64,6 @@
   main {
     margin-top: 75px;
   }
-}
-
-.bg-white {
-  background-color: #fff;
-}
-
-.bg-secondary {
-  background: #290628 !important;
-  background-color: #290628 !important;
 }
 
 .nav-link-active {
