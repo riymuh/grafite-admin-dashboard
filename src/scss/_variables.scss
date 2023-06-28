@@ -1,7 +1,8 @@
 $primary: #702ada;
 $muted: #a2a3b7;
 $secondary: #F1F2F5;
-$success: #DE6BD2;
+$third: #DE6BD2;
+$success:#198754;
 $info: #1d1e2c;
 $warning: #1d1e2c;
 $danger: tomato;
@@ -11,6 +12,7 @@ $dark: #1d1e2c;
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
+  "third":    $third,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,

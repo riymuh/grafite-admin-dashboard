@@ -16,7 +16,7 @@ body{
     font-family: var(--bs-font-family) !important;
 }  
 
-body, button, a, button, ul>li, input::placeholder {
+body, button, a, button, ul>li, input::placeholder, select>option {
     font-size: 14px !important;
 }
 
@@ -58,4 +58,12 @@ body, button, a, button, ul>li, input::placeholder {
 .form-select {
     border: 0 !important;
     color: $dark !important;
+}
+
+.page-link{
+    border-radius: 50px !important;
+}
+
+.form-label{
+    font-size: 14px !important;
 }

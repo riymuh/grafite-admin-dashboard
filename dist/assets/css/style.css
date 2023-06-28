@@ -1,0 +1,96 @@
+
+:root {
+    --offcanvas-width: 250px;
+    --topNavbarHeight: 57px;
+  }
+  
+  .sidebar-nav {
+    width: var(--offcanvas-width) !important;
+  }
+  
+  .sidebar-link {
+    display: flex !important;
+    align-items: center;
+  }
+  
+  .sidebar-link .right-icon {
+    display: inline-flex;
+    transition: all ease 0.25s;
+  }
+  
+  .sidebar-link[aria-expanded="true"] .right-icon {
+    transform: rotate(180deg);
+  }
+  
+  .sidebar-subtitle {
+    font-size: 10px !important;
+  }
+  
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+    left: auto;
+  }
+  
+  .dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+  }
+  
+  .navbar-nav .dropdown-menu {
+    position: absolute !important;
+  }
+  
+  .nav .navbar-nav {
+    flex-direction: row !important;
+  }
+  
+  @media (min-width: 992px) {
+    body {
+      overflow: auto !important;
+    }
+    .offcanvas-backdrop::before {
+      display: none !important;
+    }
+    .sidebar-nav {
+      transform: none !important;
+      visibility: visible !important;
+      /* top: var(--topNavbarHeight) !important; */
+      height: calc(100% - var(--topNavbarHeight)) !important;
+    }
+    #nav-header,
+    main {
+      margin-left: var(--offcanvas-width);
+    }
+    main {
+      margin-top: 75px;
+    }
+  }
+  
+  .nav-link-active {
+    border-left: 2px solid #702ada;
+    color: white !important;
+    font-weight: 800 !important;
+  }
+  
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background-color: transparent !important;
+    border-bottom: 2px solid #702ada;
+  }
+  
+  #nav-sidebar-body::-webkit-scrollbar-track {
+    padding: 2px 0 !important;
+    background-color: #1d1e2c !important;
+  }
+  
+  #nav-sidebar-body::-webkit-scrollbar {
+    width: 10px !important;
+  }
+  
+  #nav-sidebar-body::-webkit-scrollbar-thumb {
+    border-radius: 10px !important;
+    border: 3px solid transparent !important;
+    background-clip: content-box;
+    background-color: #8888a2 !important;
+  }
+  
