@@ -590,7 +590,7 @@ License: You must have a valid license purchased only from above link in order t
                             <i class="bi bi-arrow-down"></i>-10.23%
                           </span>
                         </div>
-                        <div><canvas id="acquisitions"></canvas></div>
+                        <div class=""><canvas id="acquisitions"></canvas></div>
                       </div>
                     </div>
                   </div>
@@ -626,7 +626,7 @@ License: You must have a valid license purchased only from above link in order t
                       <span class="fs-7 text-dark fw-bold">Total Income</span>
                       <span class="text-muted">Yearly report overview</span>
                     </div>
-                    <div><canvas id="acquisitions3"></canvas></div>
+                    <div class="w-100"><canvas id="acquisitions3" class="w-100"></canvas></div>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -960,7 +960,9 @@ License: You must have a valid license purchased only from above link in order t
                 ],
             },
             options: {
-                
+                    responsive: false,
+                    maintainAspectRatio: true,
+                    showScale: false,
                     plugins: {
                         legend: {
                             display: false,
@@ -1012,7 +1014,9 @@ License: You must have a valid license purchased only from above link in order t
                 ],
             },
             options: {
-                
+                    responsive: false,
+                    maintainAspectRatio: true,
+                    showScale: false,
                     plugins: {
                         legend: {
                             display: false,
@@ -1067,6 +1071,9 @@ License: You must have a valid license purchased only from above link in order t
                 ],
             },
             options: {
+                responsive: false,
+                maintainAspectRatio: true,
+                showScale: false,
                 elements: {
                     point:{
                             radius: 0
