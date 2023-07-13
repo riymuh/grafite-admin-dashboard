@@ -42,11 +42,69 @@ License: You must have a valid license purchased only from above link in order t
               Core
             </a>
           </li>
-          <li class="nav-item px-3 dropdown">
-            <a class="nav-link text-dark"
-              aria-expanded="false">
-              Pages
-            </a>
+          <li class="nav-item px-3 dropdown dropdown-mega position-static">
+            <a class="nav-link text-dark" href="#" data-bs-toggle="dropdown" aria-expanded="false"
+              data-bs-auto-close="outside">Pages</a>
+            <div class="dropdown-menu shadow-sm border-0">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row justify-content-between">
+                    <div class="col-auto py-4">
+                      <div class="d-flex flex-column gap-2">
+                        <span class="fs-7 text-dark fw-bold">Account</span>
+                        <div class="d-flex flex-column gap-2">
+                          <span class="text-dark">User Profile</span>
+                          <span class="text-dark">Setting</span>
+                          <span class="text-dark">Activity</span>
+                          <span class="text-dark">Logs</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto py-4">
+                      <div class="d-flex flex-column gap-2">
+                        <span class="fs-7 text-dark fw-bold">General</span>
+                        <div class="d-flex flex-column gap-2">
+                          <span class="text-dark">About</span>
+                          <span class="text-dark">FAQ</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto py-4">
+                      <div class="d-flex flex-column gap-2">
+                        <span class="fs-7 text-dark fw-bold">User Management</span>
+                        <div class="d-flex flex-column gap-2">
+                          <span class="text-dark">User</span>
+                          <span class="text-dark">Role</span>
+                          <span class="text-dark">Permission</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto py-4">
+                      <div class="d-flex flex-column gap-2">
+                        <span class="fs-7 text-dark fw-bold">Authentication</span>
+                        <div class="d-flex flex-column gap-2">
+                          <span class="text-dark">Sign-In</span>
+                          <span class="text-dark">Sing-Up</span>
+                          <span class="text-dark">Reset Password</span>
+                          <span class="text-dark">Two Factor</span>
+                          <span class="text-dark">Account Activation</span>
+                          <span class="text-dark">Account Deactivation</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto py-4">
+                      <div class="d-flex flex-column gap-2">
+                        <span class="fs-7 text-dark fw-bold">Report</span>
+                        <div class="d-flex flex-column gap-2">
+                          <span class="text-dark">Order</span>
+                          <span class="text-dark">Invoice</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="nav-item px-3">
             <a class="nav-link text-dark" href="#">
@@ -62,11 +120,6 @@ License: You must have a valid license purchased only from above link in order t
       </div>
       <div class="nav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item px-3">
-            <a class="nav-link text-dark" href="#">
-              <i class="bi bi-binoculars fs-6"></i>
-            </a>
-          </li>
           <li class="nav-item px-3 dropdown">
             <a class="nav-link text-dark position-relative" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
@@ -111,8 +164,8 @@ License: You must have a valid license purchased only from above link in order t
   <!-- begin::sidebar -->
   <div class="offcanvas offcanvas-start sidebar-nav vh-100 bg-dark" tabindex="-1" id="offcanvasExample"
     aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-body p-0" id="nav-sidebar-body">
-      <nav class="navbar py-3">
+    <div class="offcanvas-body p-0 position-relative" id="nav-sidebar-body">
+      <nav class="navbar py-3 sticky-top bg-dark">
         <a class="navbar-brand px-3 d-flex align-items-center gap-2" href="#">
           <!-- trigger offcanvas -->
           <img src="../assets/images/logo.png" width="25px" alt="">
@@ -548,7 +601,7 @@ License: You must have a valid license purchased only from above link in order t
   <!-- begin::content -->
   <main style="margin-top: 75px;">
     <div class="container-fluid p-3">
-      
+
     </div>
     <!-- begin::footer -->
     <!-- <footer>
