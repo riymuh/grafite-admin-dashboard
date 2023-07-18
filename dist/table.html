@@ -37,16 +37,136 @@ License: You must have a valid license purchased only from above link in order t
       </a>
       <div class="nav d-none d-md-inline">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item pe-3">
-            <a class="nav-link text-dark" href="#">
+          <li class="nav-item pe-3 dropdown">
+            <a class="nav-link text-dark" href="#" data-bs-toggle="dropdown" aria-expanded="false"
+              data-bs-auto-close="outside">
               Core
             </a>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <span class="me-2 fs-6">
+                    <i class="bi bi-grid-3x3-gap"></i>
+                  </span>
+                  <span class="">Dashboard</span>
+                  <span class="right-icon ms-auto ">
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <span class="me-2 fs-6">
+                    <i class="bi bi-grid-3x3-gap"></i>
+                  </span>
+                  <span class="">Layout</span>
+                  <span class="right-icon ms-auto ">
+                    <i class="bi bi-chevron-down"></i>
+                  </span>
+                </a>
+                <ul class="dropdown-menu dropdown-submenu shadow-sm border-0">
+                  <li>
+                    <a class="dropdown-item" href="#">Submenu item 1</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Submenu item 2</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+                    <ul class="dropdown-menu dropdown-submenu">
+                      <li>
+                        <a class="dropdown-item" href="#">Multi level 1</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Multi level 2</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Submenu item 4</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Submenu item 5</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </li>
-          <li class="nav-item px-3 dropdown">
-            <a class="nav-link text-dark"
-              aria-expanded="false">
+          <li class="nav-item px-3 dropdown dropdown-mega position-static">
+            <a class="nav-link text-dark" href="#" data-bs-toggle="dropdown" aria-expanded="false"
+              data-bs-auto-close="outside">
               Pages
             </a>
+            <div class="dropdown-menu shadow-sm border-0">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row justify-content-between">
+                    <div class="col-auto py-4">
+                      <div class="d-flex flex-column gap-3">
+                        <div>
+                          <span class="badge rounded-pill text-bg-primary">Account</span>
+                        </div>
+                        <div class="d-flex flex-column gap-2 fs-7">
+                          <span class="text-dark">User Profile</span>
+                          <span class="text-dark">Setting</span>
+                          <span class="text-dark">Activity</span>
+                          <span class="text-dark">Logs</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto py-4">
+                      <div class="d-flex flex-column gap-3">
+                        <div>
+                          <span class="badge rounded-pill text-bg-primary">General</span>
+                        </div>
+                        <div class="d-flex flex-column gap-2 fs-7">
+                          <span class="text-dark">About</span>
+                          <span class="text-dark">FAQ</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto py-4">
+                      <div class="d-flex flex-column gap-3">
+                        <div>
+                          <span class="badge rounded-pill text-bg-primary">User Management</span>
+                        </div>
+                        <div class="d-flex flex-column gap-2 fs-7">
+                          <span class="text-dark">User</span>
+                          <span class="text-dark">Role</span>
+                          <span class="text-dark">Permission</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto py-4">
+                      <div class="d-flex flex-column gap-3">
+                        <div>
+                          <span class="badge rounded-pill text-bg-primary">Authentication</span>
+                        </div>
+                        <div class="d-flex flex-column gap-2 fs-7">
+                          <span class="text-dark">Sign-In</span>
+                          <span class="text-dark">Sing-Up</span>
+                          <span class="text-dark">Reset Password</span>
+                          <span class="text-dark">Two Factor</span>
+                          <span class="text-dark">Account Activation</span>
+                          <span class="text-dark">Account Deactivation</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto py-4">
+                      <div class="d-flex flex-column gap-3">
+                        <div>
+                          <span class="badge rounded-pill text-bg-primary">Report</span>
+                        </div>
+                        <div class="d-flex flex-column gap-2 fs-7">
+                          <span class="text-dark">Order</span>
+                          <span class="text-dark">Invoice</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="nav-item px-3">
             <a class="nav-link text-dark" href="#">
@@ -62,9 +182,10 @@ License: You must have a valid license purchased only from above link in order t
       </div>
       <div class="nav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item px-3">
-            <a class="nav-link text-dark" href="#">
-              <i class="bi bi-binoculars fs-6"></i>
+          <li class="nav-item px-3 dropdown">
+            <a class="nav-link text-dark position-relative" href="#" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              <i class="bi bi-search fs-6"></i>
             </a>
           </li>
           <li class="nav-item px-3 dropdown">
@@ -111,15 +232,15 @@ License: You must have a valid license purchased only from above link in order t
   <!-- begin::sidebar -->
   <div class="offcanvas offcanvas-start sidebar-nav vh-100 bg-dark" tabindex="-1" id="offcanvasExample"
     aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-body p-0" id="nav-sidebar-body">
-      <nav class="navbar py-3">
+    <div class="offcanvas-body p-0 position-relative" id="nav-sidebar-body">
+      <nav class="navbar py-3 sticky-top bg-dark">
         <a class="navbar-brand px-3 d-flex align-items-center gap-2" href="#">
           <!-- trigger offcanvas -->
           <img src="../assets/images/logo.png" width="25px" alt="">
           <span class="text-white"><span class="fw-bold h4">Grafite</span>
         </a>
       </nav>
-      <nav class="mt-4 d-flex flex-column position-relative h-100">
+      <nav class="mt-4 mb-4 d-flex flex-column">
         <ul class="navbar-nav">
           <li>
             <div class="text-uppercase text-muted small fw-semibold px-3 sidebar-subtitle">core</div>
@@ -137,39 +258,39 @@ License: You must have a valid license purchased only from above link in order t
             </a>
             <div class="collapse text-muted" id="pages-dashboard">
               <div class="">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ps-4">
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">E-Commerce</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Coorporate</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">F&B</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Crypto</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">School</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Podcast</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Online Course</span>
                     </a>
                   </li>
@@ -190,19 +311,19 @@ License: You must have a valid license purchased only from above link in order t
             </a>
             <div class="collapse text-muted" id="pages-layout">
               <div class="">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ps-4">
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Topbar</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Topbar & Sidebar</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Customer Dashboard</span>
                     </a>
                   </li>
@@ -220,31 +341,31 @@ License: You must have a valid license purchased only from above link in order t
               <span class="me-2 fs-6">
                 <i class="bi bi-person-vcard"></i>
               </span>
-              <span class="">Account</span>
+              <span class="">Account <span class="badge text-bg-secondary rounded-pill ms-2">4</span></span>
               <span class="right-icon ms-auto ">
                 <i class="bi bi-chevron-down"></i>
               </span>
             </a>
             <div class="collapse text-muted" id="pages-account">
               <div class="">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ps-4">
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">User Profile</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Setting</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Activity</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Logs</span>
                     </a>
                   </li>
@@ -265,14 +386,14 @@ License: You must have a valid license purchased only from above link in order t
             </a>
             <div class="collapse text-muted" id="pages-general">
               <div class="">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ps-4">
                   <li>
-                    <a href="" class="nav-link  px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">About</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">FAQ</span>
                     </a>
                   </li>
@@ -293,19 +414,19 @@ License: You must have a valid license purchased only from above link in order t
             </a>
             <div class="collapse text-muted" id="pages-user-management">
               <div class="">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ps-4">
                   <li>
-                    <a href="" class="nav-link  px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">User</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Role</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Permission</span>
                     </a>
                   </li>
@@ -326,34 +447,34 @@ License: You must have a valid license purchased only from above link in order t
             </a>
             <div class="collapse text-muted" id="pages-authentication">
               <div class="">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ps-4">
                   <li>
-                    <a href="" class="nav-link  px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Sign-In</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Sign-Up</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Reset Password</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Two Factor</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Account Activation</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Account Deactivation</span>
                     </a>
                   </li>
@@ -374,14 +495,14 @@ License: You must have a valid license purchased only from above link in order t
             </a>
             <div class="collapse text-muted" id="pages-report">
               <div class="">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ps-4">
                   <li>
-                    <a href="" class="nav-link  px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Order</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Invoice</span>
                     </a>
                   </li>
@@ -399,51 +520,51 @@ License: You must have a valid license purchased only from above link in order t
               <span class="me-2 fs-6">
                 <i class="bi bi-palette"></i>
               </span>
-              <span class="">UI Element</span>
+              <span class="">UI Element <span class="badge text-bg-secondary rounded-pill ms-2">New</span></span>
               <span class="right-icon ms-auto ">
                 <i class="bi bi-chevron-down"></i>
               </span>
             </a>
             <div class="collapse text-muted" id="pages-ui-element">
               <div class="">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ps-4">
                   <li>
-                    <a href="" class="nav-link nav-link-active px-5">
+                    <a href="" class="nav-link nav-link-active ps-3 border-start border-primary border-opacity-50">
                       <span class="">Button</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link  px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Badge</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link  px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Modal</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link  px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Tab</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link  px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Typography</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link  px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Tooltips</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link  px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Progress Bar</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link  px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Pagination</span>
                     </a>
                   </li>
@@ -464,19 +585,19 @@ License: You must have a valid license purchased only from above link in order t
             </a>
             <div class="collapse text-muted" id="pages-form">
               <div class="">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ps-4">
                   <li>
-                    <a href="" class="nav-link  px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Default</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link  px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Validation</span>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="nav-link  px-5">
+                    <a href="" class="nav-link ps-3 border-start border-primary border-opacity-50">
                       <span class="">Wizard</span>
                     </a>
                   </li>
@@ -509,7 +630,7 @@ License: You must have a valid license purchased only from above link in order t
               <span class="me-2 fs-6">
                 <i class="bi bi-github"></i>
               </span>
-              <span class="">Github</span>
+              <span class="">Github <span class="badge text-bg-secondary rounded-pill ms-2">V1.0.0</span></span>
             </a>
           </li>
           <li>
@@ -537,9 +658,9 @@ License: You must have a valid license purchased only from above link in order t
             </a>
           </li>
         </ul>
-        <div class="bg-dark py-4 sticky-bottom shadow-sm text-center mt-auto px-3">
-          <a href="" class="btn btn-third rounded-pill  d-block"><i class="bi bi-github"></i> Github</a>
-        </div>
+      </nav>
+      <nav class="bg-dark py-4 mt-auto px-3 sticky-bottom shadow-sm text-center">
+        <a href="" class="btn btn-third rounded-pill  d-block"><i class="bi bi-github"></i> Github</a>
       </nav>
     </div>
   </div>
@@ -549,74 +670,67 @@ License: You must have a valid license purchased only from above link in order t
   <main style="margin-top: 75px;">
     <div class="container-fluid p-3">
       <div class="d-flex flex-column gap-4">
-        <section id="header-content d-flex flex-column gap-4">
-          <div class="d-flex justify-content-between align-items-center gap-4">
-            <h5 class="text-dark fw-bold">Users</h5>
-            <div class="">
-              <button
-                type="button"
-                class="btn btn-primary shadow-sm rounded-pill px-3"
-              >
-                <i class="bi bi-person-plus-fill"></i> Add User
-              </button>
-            </div>
-          </div>
-        </section>
         <section id="panel-content">
-          <div class="row g-4">
-            <div class="col-lg-3">
-              <div class="card border-0 shadow-sm">
-                <div class="card-body d-flex flex-column gap-2">
-                  <div class="opacity-50 text-dark">
-                    <span class="d-block text-uppercase fs-7">Total Members</span>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <div class="h3 fw-bold">
-                      <span class="">125</span>
-                    </div>
-                  </div>
+          <div class="card border-0 shadow-sm">
+            <div class="card-header border-0 bg-light py-3">
+              <div class="row g-3 align-items-center">
+                <div class="col">
+                  <span class="fs-6 fw-bold">Users</span>
+                </div>
+                <div class="col-auto">
+                  <button type="button" class="btn btn-primary shadow-sm rounded-pill px-3">
+                    <i class="bi bi-person-plus-fill"></i> Add User
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3">
-              <div class="card border-0 shadow-sm">
-                <div class="card-body d-flex flex-column gap-2">
-                  <div class="opacity-50 text-dark">
-                    <span class="d-block text-uppercase fs-7"
-                      >Active Members</span
-                    >
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <div class="h3 fw-bold">
-                      <span class="">70</span>
+            <div class="card-body">
+              <div class="row g-4">
+                <div class="col-lg-3">
+                  <div class="d-flex flex-column gap-2">
+                    <div class="opacity-50 text-dark">
+                      <span class="d-block text-capitalize fs-7">Total Members</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="h2 fw-bold">
+                        <span class="">125</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="card border-0 shadow-sm">
-                <div class="card-body d-flex flex-column gap-2">
-                  <div class="opacity-50 text-dark">
-                    <span class="d-block text-uppercase fs-7">Banned</span>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <div class="h3 fw-bold">
-                      <span class="">5</span>
+                <div class="col-lg-3">
+                  <div class="d-flex flex-column gap-2">
+                    <div class="opacity-50 text-dark">
+                      <span class="d-block text-capitalize fs-7">Active Members</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="h2 fw-bold">
+                        <span class="">70</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="card border-0 shadow-sm">
-                <div class="card-body d-flex flex-column gap-2">
-                  <div class="opacity-50 text-dark">
-                    <span class="d-block text-uppercase fs-7">Request</span>
+                <div class="col-lg-3">
+                  <div class="d-flex flex-column gap-2">
+                    <div class="opacity-50 text-dark">
+                      <span class="d-block text-capitalize fs-7">Banned</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="h2 fw-bold">
+                        <span class="">5</span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="d-flex justify-content-between">
-                    <div class="h3 fw-bold">
-                      <span class="">25</span>
+                </div>
+                <div class="col-lg-3">
+                  <div class="d-flex flex-column gap-2">
+                    <div class="opacity-50 text-dark">
+                      <span class="d-block text-capitalize fs-7">Request</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="h2 fw-bold">
+                        <span class="">25</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -626,7 +740,7 @@ License: You must have a valid license purchased only from above link in order t
         </section>
         <section id="body-content">
           <div class="card border-0 shadow-sm">
-            <div class="card-header bg-light py-3">
+            <div class="card-header border-0 bg-light py-3">
               <div class="d-flex gap-4 justify-content-between">
                 <div>
                   <div class="row g-3 align-items-center">
@@ -635,12 +749,9 @@ License: You must have a valid license purchased only from above link in order t
                         <button type="button" class="btn btn-secondary border-0">
                           <i class="bi bi-filter-right"></i> Filter
                         </button>
-                        <button
-                          type="button"
+                        <button type="button"
                           class="btn btn-light bg-secondary border-0 dropdown-toggle dropdown-toggle-split"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
+                          data-bs-toggle="dropdown" aria-expanded="false">
                           <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <div class="dropdown-menu border-0 shadow-sm p-0">
@@ -648,63 +759,38 @@ License: You must have a valid license purchased only from above link in order t
                             <div class="card-body">
                               <form class="row g-3">
                                 <div class="col-12">
-                                  <label for="inputEmail4" class="form-label"
-                                    >Email</label
-                                  >
+                                  <label for="inputEmail4" class="form-label">Email</label>
                                   <select id="inputState" class="form-select bg-secondary">
-                                      <option selected>Choose...</option>
-                                      <option>...</option>
-                                    </select>
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
                                 </div>
                                 <div class="col-12">
-                                  <label for="inputAddress2" class="form-label"
-                                    >Address 2</label
-                                  >
+                                  <label for="inputAddress2" class="form-label">Address 2</label>
                                   <select id="inputState" class="form-select bg-secondary">
-                                      <option selected>Choose...</option>
-                                      <option>...</option>
-                                    </select>
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
                                 </div>
                                 <div class="col-md-6">
-                                  <label for="inputCity" class="form-label"
-                                    >City</label
-                                  >
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputCity"
-                                  />
+                                  <label for="inputCity" class="form-label">City</label>
+                                  <input type="text" class="form-control" id="inputCity" />
                                 </div>
                                 <div class="col-md-4">
-                                  <label for="inputState" class="form-label"
-                                    >State</label
-                                  >
+                                  <label for="inputState" class="form-label">State</label>
                                   <select id="inputState" class="form-select">
                                     <option selected>Choose...</option>
                                     <option>...</option>
                                   </select>
                                 </div>
                                 <div class="col-md-2">
-                                  <label for="inputZip" class="form-label"
-                                    >Zip</label
-                                  >
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputZip"
-                                  />
+                                  <label for="inputZip" class="form-label">Zip</label>
+                                  <input type="text" class="form-control" id="inputZip" />
                                 </div>
                                 <div class="col-12">
                                   <div class="form-check">
-                                    <input
-                                      class="form-check-input"
-                                      type="checkbox"
-                                      id="gridCheck"
-                                    />
-                                    <label
-                                      class="form-check-label"
-                                      for="gridCheck"
-                                    >
+                                    <input class="form-check-input" type="checkbox" id="gridCheck" />
+                                    <label class="form-check-label" for="gridCheck">
                                       Check me out
                                     </label>
                                   </div>
@@ -721,11 +807,7 @@ License: You must have a valid license purchased only from above link in order t
                       </div>
                     </div>
                     <div class="col-auto">
-                      <input
-                        type="text"
-                        class="form-control border-0 bg-secondary"
-                        placeholder="Search users"
-                      />
+                      <input type="text" class="form-control border-0 bg-secondary" placeholder="Search users" />
                     </div>
                   </div>
                 </div>
@@ -736,19 +818,17 @@ License: You must have a valid license purchased only from above link in order t
                         <button type="button" class="btn btn-secondary border-0">
                           <i class="bi bi-download"></i> Export
                         </button>
-                        <button
-                          type="button"
-                          class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
+                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown" aria-expanded="false">
                           <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <ul class="dropdown-menu border-0 shadow-sm">
                           <li><a class="dropdown-item" href="#">Excel</a></li>
                           <li><a class="dropdown-item" href="#">PDF</a></li>
                           <li><a class="dropdown-item" href="#">CSV</a></li>
-                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <hr class="dropdown-divider" />
+                          </li>
                           <li><a class="dropdown-item" href="#">Print</a></li>
                         </ul>
                       </div>
@@ -793,30 +873,24 @@ License: You must have a valid license purchased only from above link in order t
                       <span>Indonesia</span>
                     </td>
                     <td>
-                      <span class="badge text-bg-success">Active</span>
+                      <span class="badge text-bg-success rounded-pill">Active</span>
                     </td>
                     <td>
                       <span>Staff</span>
                     </td>
                     <td>
                       <div class="d-flex gap-2 justify-content-end">
-                        <button
-                          class="btn btn-sm btn-primary shadow-sm rounded-circle"
-                        >
+                        <button class="btn btn-sm btn-primary shadow-sm rounded-circle">
                           <span class="">
                             <i class="bi bi-eye"></i>
                           </span>
                         </button>
-                        <button
-                          class="btn btn-sm btn-light shadow-sm rounded-circle"
-                        >
+                        <button class="btn btn-sm btn-light shadow-sm rounded-circle">
                           <span class="">
                             <i class="bi bi-pencil-square"></i>
                           </span>
                         </button>
-                        <button
-                          class="btn btn-sm btn-light shadow-sm rounded-circle"
-                        >
+                        <button class="btn btn-sm btn-light shadow-sm rounded-circle">
                           <span class="">
                             <i class="bi bi-trash"></i>
                           </span>
@@ -826,25 +900,7 @@ License: You must have a valid license purchased only from above link in order t
                   </tr>
                 </tbody>
               </table>
-              <div
-                class="d-flex justify-content-between align-items-center"
-                id="pagination"
-              >
-                <div class="row g-1 align-items-center">
-                  <div class="col-auto">
-                    <label class="col-form-label">Showing:</label>
-                  </div>
-                  <div class="col-auto">
-                    <select class="form-select form-select-sm bg-secondary">
-                      <option value="1">10</option>
-                      <option value="2">20</option>
-                      <option value="3">50</option>
-                    </select>
-                  </div>
-                  <div class="col-auto">
-                    <span class="form-text"> of 212 </span>
-                  </div>
-                </div>
+              <div class="d-flex justify-content-end align-items-center" id="pagination">
                 <nav aria-label="...">
                   <ul class="pagination">
                     <li class="page-item disabled">
@@ -852,7 +908,7 @@ License: You must have a valid license purchased only from above link in order t
                     </li>
                     <li class="page-item"><a class="page-link" href="#">1</a></li>
                     <li class="page-item active" aria-current="page">
-                      <a class="page-link" href="#">2</a>
+                      <a class="page-link shadow-sm" href="#">2</a>
                     </li>
                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                     <li class="page-item">
@@ -994,7 +1050,23 @@ License: You must have a valid license purchased only from above link in order t
         <i class="bi bi-x-lg"></i>
       </button>
     </div>
-    <div class="offcanvas-body">
+    <div class="offcanvas-body d-flex flex-column gap-4">
+      <div class="d-flex gap-3 align-items-center">
+        <div class="">
+          <img
+            src="https://images.pexels.com/photos/7562139/pexels-photo-7562139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            class="img-thumbnail rounded-circle" width="50px" alt="...">
+        </div>
+        <div class="d-flex flex-column">
+          <span class="fs-6 text-white">Riyadh Muhammad</span>
+          <span class="text-muted">Manager Sales</span>
+        </div>
+        <div class="ms-auto">
+          <a href="" class="btn btn-sm btn-third rounded-circle">
+            <i class="bi bi-pencil"></i>
+          </a>
+        </div>
+      </div>
       <div class="row g-4">
         <div class="col col-sm-6 col-md-4">
           <div class="card h-100 bg-dark border-0">
@@ -1096,8 +1168,26 @@ License: You must have a valid license purchased only from above link in order t
   </div>
   <!-- end::menu_bar_mobile -->
 
+  <!-- start::modal_search -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex flex-column gap-3">
+            <input type="email" class="form-control py-2 rounded-pill" id="exampleFormControlInput1"
+              placeholder="Search">
+            <div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end::modal_search -->
+
   <!-- begin::scripts -->
-  <script src="main.js"></script>
+  <script src="../main.js"></script>
   <!-- end::scripts -->
 </body>
 
