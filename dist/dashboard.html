@@ -43,8 +43,7 @@ License: You must have a valid license purchased only from above link in order t
             </a>
           </li>
           <li class="nav-item px-3 dropdown">
-            <a class="nav-link text-dark"
-              aria-expanded="false">
+            <a class="nav-link text-dark" aria-expanded="false">
               Pages
             </a>
           </li>
@@ -538,7 +537,7 @@ License: You must have a valid license purchased only from above link in order t
           </li>
         </ul>
         <div class="bg-dark py-4 sticky-bottom shadow-sm text-center mt-auto px-3">
-          <a href="" class="btn btn-third rounded-pill  d-block"><i class="bi bi-github"></i> Github</a>
+          <a href="" class="btn btn-tertiary rounded-pill  d-block"><i class="bi bi-github"></i> Github</a>
         </div>
       </nav>
     </div>
@@ -557,9 +556,7 @@ License: You must have a valid license purchased only from above link in order t
                   <span class="fs-7 text-dark fw-bold">Welcome back John!</span>
                   <div class="d-flex flex-column gap-2">
                     <div>
-                      <span class="text-muted"
-                        >Lorem ipsum, dolor sit amet.</span
-                      >
+                      <span class="text-muted">Lorem ipsum, dolor sit amet.</span>
                     </div>
                     <div>
                       <span class="fs-2 fw-bold">$30,346</span>
@@ -570,9 +567,7 @@ License: You must have a valid license purchased only from above link in order t
                       <span class="text-muted">from last week</span>
                     </div>
                   </div>
-                  <a href="" class="btn btn-sm btn-primary px-3 rounded-pill mt-auto"
-                    >View Report</a
-                  >
+                  <a href="" class="btn btn-sm btn-primary px-3 rounded-pill mt-auto">View Report</a>
                 </div>
               </div>
             </div>
@@ -667,16 +662,16 @@ License: You must have a valid license purchased only from above link in order t
                         </div>
                       </div>
                       <div class="card bg-secondary border-0">
-                          <div class="card-body d-flex align-items-center">
-                            <div class="d-flex flex-column">
-                              <span class="text-dark">Net Income</span>
-                              <span>$124</span>
-                            </div>
-                            <span class="text-success ms-auto">
-                              <i class="bi bi-arrow-up"></i>5.04%
-                            </span>
+                        <div class="card-body d-flex align-items-center">
+                          <div class="d-flex flex-column">
+                            <span class="text-dark">Net Income</span>
+                            <span>$124</span>
                           </div>
+                          <span class="text-success ms-auto">
+                            <i class="bi bi-arrow-up"></i>5.04%
+                          </span>
                         </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -920,207 +915,205 @@ License: You must have a valid license purchased only from above link in order t
   <script src="main.js"></script>
   <script src="asset/script.js"></script>
   <script>
-    (async function() {
-        const data = [
-            { id: 1, year: 'Sun', count: 10 },
-            { id: 2, year: 'Mon', count: 5 },
-            { id: 3, year: 'Tue', count: 15 },
-            { id: 4, year: 'Wed', count: 25 },
-            { id: 5, year: 'Thu', count: 22 },
-            { id: 6, year: 'Fri', count: 30 },
-            { id: 7, year: 'Sat', count: 10 },
-        ];
+    (async function () {
+      const data = [
+        { id: 1, year: 'Sun', count: 10 },
+        { id: 2, year: 'Mon', count: 5 },
+        { id: 3, year: 'Tue', count: 15 },
+        { id: 4, year: 'Wed', count: 25 },
+        { id: 5, year: 'Thu', count: 22 },
+        { id: 6, year: 'Fri', count: 30 },
+        { id: 7, year: 'Sat', count: 10 },
+      ];
 
-        const backgroundColor = [];
-        const backgroundColor2 = [];
+      const backgroundColor = [];
+      const backgroundColor2 = [];
 
-        for(i=0; i<data.length; i++){
-            if(data[i].year == 'Fri')
-            {
-                backgroundColor[data[i].id - 1] = '#DE6BD2';
-            }else{
-                backgroundColor[data[i].id -1] = 'rgba(223, 109, 211, 0.16)';
-            }
+      for (i = 0; i < data.length; i++) {
+        if (data[i].year == 'Fri') {
+          backgroundColor[data[i].id - 1] = '#DE6BD2';
+        } else {
+          backgroundColor[data[i].id - 1] = 'rgba(223, 109, 211, 0.16)';
         }
+      }
 
-        for(i=0; i<data.length; i++){
-            if(data[i].year == 'Mon')
-            {
-                backgroundColor2[data[i].id - 1] = '#DE6BD2';
-            }else{
-                backgroundColor2[data[i].id -1] = 'rgba(223, 109, 211, 0.16)';
-            }
+      for (i = 0; i < data.length; i++) {
+        if (data[i].year == 'Mon') {
+          backgroundColor2[data[i].id - 1] = '#DE6BD2';
+        } else {
+          backgroundColor2[data[i].id - 1] = 'rgba(223, 109, 211, 0.16)';
         }
+      }
 
-        new Chart(
-            document.getElementById('acquisitions'),
-            {
-            type: 'bar',
-            data: {
-                labels: data.map(row => row.year),
-                datasets: [
-                {
-                    label: 'Acquisitions by year',
-                    data: data.map(row => row.count),
-                    borderRadius: 15,
-                    backgroundColor: backgroundColor,
-                }
-                ],
+      new Chart(
+        document.getElementById('acquisitions'),
+        {
+          type: 'bar',
+          data: {
+            labels: data.map(row => row.year),
+            datasets: [
+              {
+                label: 'Acquisitions by year',
+                data: data.map(row => row.count),
+                borderRadius: 15,
+                backgroundColor: backgroundColor,
+              }
+            ],
+          },
+          options: {
+            responsive: false,
+            maintainAspectRatio: true,
+            showScale: false,
+            plugins: {
+              legend: {
+                display: false,
+              }
             },
-            options: {
-                    responsive: false,
-                    maintainAspectRatio: true,
-                    showScale: false,
-                    plugins: {
-                        legend: {
-                            display: false,
-                        }
-                    },
-                    scales: {
-                        x: {
-                            grid: {
-                                drawOnChartArea:false,
-                                display:false,
-                                drawBorder:false,
-                                
-                            },
-                            border:{
-                                display:false
-                            },
-                            ticks:{
+            scales: {
+              x: {
+                grid: {
+                  drawOnChartArea: false,
+                  display: false,
+                  drawBorder: false,
 
-                            },
-                            stacked: true
-                        },
-                        y: {
-                            beginAtZero:true,
-                            display:false,
-                            grid: {
-                                drawTicks:false,
-                                drawOnChartArea:false,
-                                display:false,
-                                drawBorder:false 
-                            },
-                        },
-                    },
-                }
-            }
-        );
-        new Chart(
-            document.getElementById('acquisitions2'),
-            {
-            type: 'bar',
-            data: {
-                labels: data.map(row => row.year),
-                datasets: [
-                {
-                    label: 'Acquisitions by year',
-                    data: data.map(row => row.count),
-                    borderRadius: 15,
-                    backgroundColor: backgroundColor2,
-                }
-                ],
+                },
+                border: {
+                  display: false
+                },
+                ticks: {
+
+                },
+                stacked: true
+              },
+              y: {
+                beginAtZero: true,
+                display: false,
+                grid: {
+                  drawTicks: false,
+                  drawOnChartArea: false,
+                  display: false,
+                  drawBorder: false
+                },
+              },
             },
-            options: {
-                    responsive: false,
-                    maintainAspectRatio: true,
-                    showScale: false,
-                    plugins: {
-                        legend: {
-                            display: false,
-                        }
-                    },
-                    scales: {
-                        x: {
-                            grid: {
-                                drawOnChartArea:false,
-                                display:false,
-                                drawBorder:false,
-                                
-                            },
-                            border:{
-                                display:false
-                            },
-                            ticks:{
-
-                            },
-                            stacked: true
-                        },
-                        y: {
-                            beginAtZero:true,
-                            display:false,
-                            grid: {
-                                drawTicks:false,
-                                drawOnChartArea:false,
-                                display:false,
-                                drawBorder:false 
-                            },
-                        },
-                    },
-                }
-            }
-        );
-        new Chart(
-            document.getElementById('acquisitions3'),
-            {
-            type: 'line',
-            data: {
-                labels: data.map(row => row.year),
-                datasets: [
-                {
-                    label: 'Acquisitions by year',
-                    data: data.map(row => row.count),
-                    borderRadius: 15,
-                    backgroundColor: 'rgba(223, 109, 211, 0.16)',
-                    borderColor:'#DE6BD2',
-                    tension:0.4,
-                    fill:true,
-                }
-                ],
+          }
+        }
+      );
+      new Chart(
+        document.getElementById('acquisitions2'),
+        {
+          type: 'bar',
+          data: {
+            labels: data.map(row => row.year),
+            datasets: [
+              {
+                label: 'Acquisitions by year',
+                data: data.map(row => row.count),
+                borderRadius: 15,
+                backgroundColor: backgroundColor2,
+              }
+            ],
+          },
+          options: {
+            responsive: false,
+            maintainAspectRatio: true,
+            showScale: false,
+            plugins: {
+              legend: {
+                display: false,
+              }
             },
-            options: {
-                responsive: false,
-                maintainAspectRatio: true,
-                showScale: false,
-                elements: {
-                    point:{
-                            radius: 0
-                        }
-                    },
-                    plugins: {
-                        legend: {
-                            display: false,
-                        }
-                    },
-                    scales: {
-                        x: {
-                            grid: {
-                                drawOnChartArea:false,
-                                display:false,
-                                drawBorder:false,
-                                
-                            },
-                            border:{
-                                display:false
-                            },
-                            ticks:{
+            scales: {
+              x: {
+                grid: {
+                  drawOnChartArea: false,
+                  display: false,
+                  drawBorder: false,
 
-                            },
-                            stacked: true
-                        },
-                        y: {
-                            beginAtZero:true,
-                            grid: { 
-                                drawBorder:false,
-                            },
-                            border:{
-                                display:false
-                            },
-                        },
-                    },
-                }
-            }
-        );
+                },
+                border: {
+                  display: false
+                },
+                ticks: {
+
+                },
+                stacked: true
+              },
+              y: {
+                beginAtZero: true,
+                display: false,
+                grid: {
+                  drawTicks: false,
+                  drawOnChartArea: false,
+                  display: false,
+                  drawBorder: false
+                },
+              },
+            },
+          }
+        }
+      );
+      new Chart(
+        document.getElementById('acquisitions3'),
+        {
+          type: 'line',
+          data: {
+            labels: data.map(row => row.year),
+            datasets: [
+              {
+                label: 'Acquisitions by year',
+                data: data.map(row => row.count),
+                borderRadius: 15,
+                backgroundColor: 'rgba(223, 109, 211, 0.16)',
+                borderColor: '#DE6BD2',
+                tension: 0.4,
+                fill: true,
+              }
+            ],
+          },
+          options: {
+            responsive: false,
+            maintainAspectRatio: true,
+            showScale: false,
+            elements: {
+              point: {
+                radius: 0
+              }
+            },
+            plugins: {
+              legend: {
+                display: false,
+              }
+            },
+            scales: {
+              x: {
+                grid: {
+                  drawOnChartArea: false,
+                  display: false,
+                  drawBorder: false,
+
+                },
+                border: {
+                  display: false
+                },
+                ticks: {
+
+                },
+                stacked: true
+              },
+              y: {
+                beginAtZero: true,
+                grid: {
+                  drawBorder: false,
+                },
+                border: {
+                  display: false
+                },
+              },
+            },
+          }
+        }
+      );
     })();
   </script>
   <!-- end::scripts -->
