@@ -38,7 +38,7 @@ License: You must have a valid license purchased only from above link in order t
                   </div>
                   <div>
                     <span class="text-success fw-semibold">
-                      <i class="bi bi-arrow-down"></i>46%</span>
+                      <i class="bi bi-arrow-up"></i>46%</span>
                     <span class="text-muted">from last week</span>
                   </div>
                 </div>
@@ -139,16 +139,95 @@ License: You must have a valid license purchased only from above link in order t
                       </div>
                     </div>
                     <div class="card bg-secondary border-0">
-                        <div class="card-body d-flex align-items-center">
-                          <div class="d-flex flex-column">
-                            <span class="text-dark">Net Income</span>
-                            <span>$124</span>
-                          </div>
-                          <span class="text-success ms-auto">
-                            <i class="bi bi-arrow-up"></i>5.04%
-                          </span>
+                      <div class="card-body d-flex align-items-center">
+                        <div class="d-flex flex-column">
+                          <span class="text-dark">Net</span>
+                          <span>$124</span>
                         </div>
+                        <span class="text-success ms-auto">
+                          <i class="bi bi-arrow-up"></i>5.04%
+                        </span>
                       </div>
+                    </div>
+                    <div class="card bg-secondary border-0">
+                      <div class="card-body d-flex align-items-center">
+                        <div class="d-flex flex-column">
+                          <span class="text-dark">Gross</span>
+                          <span>$154</span>
+                        </div>
+                        <span class="text-success ms-auto">
+                          <i class="bi bi-arrow-up"></i>3.24%
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="report-3">
+        <div class="row g-4">
+          <div class="col col-sm-12 col-md-6 d-flex align-items-strech">
+            <div class="card border-0 shadow-sm flex-grow-1">
+              <div class="card-body">
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex flex-column justify-content-between">
+                    <span class="fs-7 text-dark fw-bold">Transactions</span>
+                    <span class="text-muted">Sales report overview</span>
+                  </div>
+                  <div>
+                    <canvas id="acquisitions4" class="w-100"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-md-6 d-flex align-items-strech">
+            <div class="card border-0 shadow-sm flex-grow-1">
+              <div class="card-body">
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex flex-column justify-content-between">
+                    <span class="fs-7 text-dark fw-bold">Transactions Report</span>
+                    <span class="text-muted">Monthly, Avg $62</span>
+                  </div>
+                  <div class="chart d-flex flex-column gap-3">
+                    <div>
+                      <span class="fs-2 fw-bold">$30,346</span>
+                    </div>
+                    <div>
+                      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar text-bg-primary" style="width: 75%">75%</div>
+                      </div>
+                    </div>
+                    <div>
+                      <table class="table">
+                        
+                        <tbody>
+                          <tr>
+                            <td>Gross value</td>
+                            <td class="text-muted">$3,500.71</td>
+                            <td><span class="badge text-bg-success">+5%</span></td>
+                          </tr>
+                          <tr>
+                            <td>Net volume from sales</td>
+                            <td class="text-muted">$2,980.45</td>
+                            <td><span class="badge text-bg-warning">+10%</span></td>
+                          </tr>
+                          <tr>
+                            <td>New volume from sales</td>
+                            <td class="text-muted">$950.00</td>
+                            <td><span class="badge text-bg-danger">-1.2%</span></td>
+                          </tr>
+                          <tr>
+                            <td>Other</td>
+                            <td class="text-muted">$40.00</td>
+                            <td><span class="badge text-bg-success">+3%</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -172,12 +251,22 @@ License: You must have a valid license purchased only from above link in order t
               { id: 6, year: 'Fri', count: 30 },
               { id: 7, year: 'Sat', count: 10 },
           ];
+
+          const data2 = [
+              { id: 1, year: 'Sun', count: 63 },
+              { id: 2, year: 'Mon', count: 52 },
+              { id: 3, year: 'Tue', count: 25 },
+              { id: 4, year: 'Wed', count: 35 },
+              { id: 5, year: 'Thu', count: 62 },
+              { id: 6, year: 'Fri', count: 40 },
+              { id: 7, year: 'Sat', count: 30 },
+          ];
   
           const backgroundColor = [];
           const backgroundColor2 = [];
   
           for(i=0; i<data.length; i++){
-              if(data[i].year == 'Fri')
+              if(data[i].year == 'Mon')
               {
                   backgroundColor[data[i].id - 1] = '#DE6BD2';
               }else{
@@ -185,8 +274,8 @@ License: You must have a valid license purchased only from above link in order t
               }
           }
   
-          for(i=0; i<data.length; i++){
-              if(data[i].year == 'Mon')
+          for(i=0; i<data2.length; i++){
+              if(data[i].year == 'Sun')
               {
                   backgroundColor2[data[i].id - 1] = '#DE6BD2';
               }else{
@@ -257,7 +346,7 @@ License: You must have a valid license purchased only from above link in order t
                   datasets: [
                   {
                       label: 'Acquisitions by year',
-                      data: data.map(row => row.count),
+                      data: data2.map(row => row.count),
                       borderRadius: 15,
                       backgroundColor: backgroundColor2,
                   }
@@ -313,8 +402,111 @@ License: You must have a valid license purchased only from above link in order t
                       label: 'Acquisitions by year',
                       data: data.map(row => row.count),
                       borderRadius: 15,
-                      backgroundColor: 'rgba(223, 109, 211, 0.16)',
+                      backgroundColor: 'rgba(223, 109, 211, 0.1)',
                       borderColor:'#DE6BD2',
+                      tension:0.4,
+                      fill:true,
+                  },
+                  {
+                      label: 'Acquisitions by year',
+                      data: data2.map(row => row.count),
+                      borderRadius: 15,
+                      backgroundColor: 'rgba(25,135,84,0.1)',
+                      borderColor:'#198754',
+                      tension:0.4,
+                      fill:true,
+                  }
+                  ],
+              },
+              options: {
+                  responsive: false,
+                  maintainAspectRatio: true,
+                  showScale: false,
+                  elements: {
+                      point:{
+                              radius: 0
+                          }
+                      },
+                      plugins: {
+                          legend: {
+                              display: false,
+                          }
+                      },
+                      scales: {
+                          x: {
+                              grid: {
+                                  drawOnChartArea:false,
+                                  display:false,
+                                  drawBorder:false,
+                                  
+                              },
+                              border:{
+                                  display:false
+                              },
+                              ticks:{
+  
+                              },
+                              stacked: true
+                          },
+                          y: {
+                              beginAtZero:true,
+                              grid: { 
+                                  drawBorder:false,
+                              },
+                              border:{
+                                  display:false
+                              },
+                          },
+                      },
+                  }
+              }
+          );
+          new Chart(
+              document.getElementById('acquisitions4'),
+              {
+              type: 'bubble',
+              data: {
+                  labels: data.map(row => row.year),
+                  datasets: [
+                  {
+                      label: 'Acquisitions by year',
+                      data: [{
+                              x: 100,
+                              y: 0,
+                              r: 10
+                            }, {
+                              x: 60,
+                              y: 30,
+                              r: 20
+                            }, {
+                              x: 40,
+                              y: 60,
+                              r: 25
+                            }, {
+                              x: 80,
+                              y: 80,
+                              r: 50
+                            }, {
+                              x: 20,
+                              y: 30,
+                              r: 25
+                            }, {
+                              x: 0,
+                              y: 100,
+                              r: 5
+                            }],
+                      borderRadius: 15,
+                      backgroundColor: 'rgba(223, 109, 211, 0.1)',
+                      borderColor:'#DE6BD2',
+                      tension:0.4,
+                      fill:true,
+                  },
+                  {
+                      label: 'Acquisitions by year',
+                      data: data2.map(row => row.count),
+                      borderRadius: 15,
+                      backgroundColor: 'rgba(112,42,218,0.1)',
+                      borderColor:'#702ada',
                       tension:0.4,
                       fill:true,
                   }
