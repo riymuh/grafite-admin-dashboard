@@ -1,104 +1,104 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Webpack</title>
-  </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Webpack!</h1>
-      <button class="btn btn-primary">Primary button</button>
-    </div>
-    <script src="./main.js"></script>
-    <script>
-      //function
-      // function Mahasiswa(nama, energi){
-      //   let mahasiswa = {};
-      //   mahasiswa.nama = nama;
-      //   mahasiswa.energi = energi;
-      //   mahasiswa.makan = function(energi){
-      //     return this.energi += energi;
-      //   }
 
-      //   return mahasiswa;
-      // }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap w/ Webpack</title>
+</head>
 
-      // let riyadh = Mahasiswa('riyadh', 10);
+<body>
+  <div class="container py-4 px-3 mx-auto">
+    <h1>Hello, Bootstrap and Webpack!</h1>
+    <button class="btn btn-primary">Primary button</button>
+  </div>
+  <script src="./main.js"></script>
+  <script>
+    //function
+    // function Mahasiswa(nama, energi){
+    //   let mahasiswa = {};
+    //   mahasiswa.nama = nama;
+    //   mahasiswa.energi = energi;
+    //   mahasiswa.makan = function(energi){
+    //     return this.energi += energi;
+    //   }
 
-      //construct
-      // function Mahasiswa(nama, energi){
-      //   //let mahasiswa = {};
-      //   this.nama = nama;
-      //   this.energi = energi;
-      //   this.makan = function(energi){
-      //     return this.energi += energi;
-      //   }
-      // }
+    //   return mahasiswa;
+    // }
 
-      // let riyadh = new Mahasiswa('riyadh', 10);
+    // let riyadh = Mahasiswa('riyadh', 10);
 
-      // //function
-      // const methodMahasiswa = {
-      //   makan: function(porsi){
-      //     this.energi += porsi;
-      //     return this;
-      //   },
-      //   main: function(energi){
-      //     this.energi -= energi;
-      //     return this
-      //   },
-      // }
+    //construct
+    // function Mahasiswa(nama, energi){
+    //   //let mahasiswa = {};
+    //   this.nama = nama;
+    //   this.energi = energi;
+    //   this.makan = function(energi){
+    //     return this.energi += energi;
+    //   }
+    // }
 
-      // function Mahasiswa(nama, energi){
-      //   let mahasiswa = Object.create(methodMahasiswa);
-      //   mahasiswa.nama = nama;
-      //   mahasiswa.energi = energi;
+    // let riyadh = new Mahasiswa('riyadh', 10);
 
-      //   return mahasiswa;
-      // }
+    // //function
+    // const methodMahasiswa = {
+    //   makan: function(porsi){
+    //     this.energi += porsi;
+    //     return this;
+    //   },
+    //   main: function(energi){
+    //     this.energi -= energi;
+    //     return this
+    //   },
+    // }
 
-      // let riyadh = Mahasiswa('riyadh', 10);
+    // function Mahasiswa(nama, energi){
+    //   let mahasiswa = Object.create(methodMahasiswa);
+    //   mahasiswa.nama = nama;
+    //   mahasiswa.energi = energi;
 
-       //function
-      //  const methodMahasiswa = {
-      //   makan: function(porsi){
-      //     this.energi += porsi;
-      //     return this;
-      //   },
-      //   main: function(energi){
-      //     this.energi -= energi;
-      //     return this
-      //   },
-      // }
+    //   return mahasiswa;
+    // }
 
-      // function Mahasiswa(nama, energi){
-      //   this.nama = nama;
-      //   this.energi = energi;
-      // }
+    // let riyadh = Mahasiswa('riyadh', 10);
 
-      // Mahasiswa.prototype.makan = function(porsi)
-      // {
-      //   this.energi += porsi;
-      // }
+    //function
+    //  const methodMahasiswa = {
+    //   makan: function(porsi){
+    //     this.energi += porsi;
+    //     return this;
+    //   },
+    //   main: function(energi){
+    //     this.energi -= energi;
+    //     return this
+    //   },
+    // }
 
-      // let riyadh = new Mahasiswa('riyadh', 10);
+    // function Mahasiswa(nama, energi){
+    //   this.nama = nama;
+    //   this.energi = energi;
+    // }
 
-      class Mahasiswa
-      {
-        constructor(name, energi)
-        {
-          this.name = name;
-          this.energi = energi;
-        }
+    // Mahasiswa.prototype.makan = function(porsi)
+    // {
+    //   this.energi += porsi;
+    // }
 
-        makan(porsi)
-        {
-          this.energi += porsi;
-        }
+    // let riyadh = new Mahasiswa('riyadh', 10);
+
+    class Mahasiswa {
+      constructor(name, energi) {
+        this.name = name;
+        this.energi = energi;
       }
 
-      let riyadh = new Mahasiswa('riyadh', 100);
-    </script>
-  </body>
+      makan(porsi) {
+        this.energi += porsi;
+      }
+    }
+
+    let riyadh = new Mahasiswa('riyadh', 100);
+  </script>
+</body>
+
 </html>
